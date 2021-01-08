@@ -1,8 +1,8 @@
 Vifaa Vya Shughuli
 
-This is a custom based web application built for a client who owns renting items for ceremony business.
+This is a customized web based application built for a particular client who owns a renting business of domestic items.
 The client wishes to have an online system that enables this bussiness to be accessed anywhere at anytime.
-The client/system admin has the control over the system in a way that he can make descriptions of items, like their names, the quality, the price,and declaring to who to be served after payments confirmation.
-The system enables customers to view available items in the system such as tables, chairs,different kinds of decorations, dishes and others they wish to have in their ceremony.
-The customer is able to navigate through items and make his choice of interest, but for the placement of an order he/she must be a registered customer.
-The customer will also have an access of making  online payments for the oredered items and view an invoice.
+The client/system admin has control over the system in a way that he/she can upload item images and create their descriptions including pricing.
+The system is able customers to view available ceremonial or functional items in the system such as tables, chairs, decorations, dishes and tents.
+The customer is able to navigate through different ategories and explore various items, but to place an order requires a registered customer only.
+The system also enables customers to make online payments through the used of control numbers. In addition, the customer can view related invoices.
