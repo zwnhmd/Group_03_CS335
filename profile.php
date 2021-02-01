@@ -123,9 +123,9 @@ if(!isset($_SESSION["uid"])){
 				</li>
 				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span><?php echo "Mambo, ".$_SESSION["name"]; ?></a>
 					<ul class="dropdown-menu">
-                        <li><a href="#" style="text-decoration:none; color:red;"><span class="glyphicon glyphicon-shopping-cart"></span>Kikapu</a></li>
+                        <li><a href="cart.php" style="text-decoration:none; color:red;"><span class="glyphicon glyphicon-shopping-cart"></span>Kikapu</a></li>
 						<li class="divider"></li>
-						<li><a href="#" style="text-decoration:none; color:red;"><span class="glyphicon glyphicon-tag"></span>Maagizo</a></li>
+						<li><a href="customer_order.php" style="text-decoration:none; color:red;"><span class="glyphicon glyphicon-tag"></span>Maagizo</a></li>
 						<li class="divider"></li>
                         <li><a href="#" style="text-decoration:none; color:red;"><span class=" glyphicon glyphicon-bell"></span>Taarifa</a></li>
                         <li class="divider"></li>
