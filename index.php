@@ -115,7 +115,7 @@ if(isset($_SESSION["uid"])){
 				<!-- Create a customer registration file -->
 
 				<li><a href="customer_registration.php"><span class="glyphicon glyphicon-user"></span>Jisajili</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-sunglasses"></span>Msimamizi</a></li>
+                <li><a href="admin_area/login.html"><span class="glyphicon glyphicon-sunglasses"></span>Msimamizi</a></li>
 			</ul>
 		</div>
 	</div>
