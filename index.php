@@ -106,7 +106,21 @@ if(isset($_SESSION["uid"])){
 				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>Ingia</a>
 					<ul class="dropdown-menu">
 				<!-- Login pannel to be addd by simtovu -->
-						
+	
+						<div style="width:300px;">
+							<div class="panel panel-primary">
+								<div class="panel-heading">Ingia</div>
+								<div class="panel-heading">
+									<label for="email">Barua-pepe</label>
+									<input type="email" class="form-control" id="email" required/>
+									<label for="email">Neno-siri</label>
+									<input type="password" class="form-control" id="password" required/>
+									<p><br/></p>
+									<a href="#" style="color:white; list-style:none;">Nimesahau Neno-siri langu!</a><input type="submit" class="btn btn-success" style="float:right;" id="login" value="Ingia">
+								</div>
+								<div class="panel-footer" id="e_msg"></div>
+							</div>
+						</div>	
 
 
 					</ul>
