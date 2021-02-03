@@ -9,7 +9,7 @@ if(!isset($_SESSION["uid"])){
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>VifaaVyaShughuli</title>
+		<title>VifaaVyaShughuli order</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css"/>
 		<script src="js/jquery2.js"></script>
 		<script src="js/bootstrap.min.js"></script>
@@ -21,9 +21,11 @@ if(!isset($_SESSION["uid"])){
 <body>
 	<div class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container-fluid">	
-			<div class="navbar-header">
-				<a href="#" class="navbar-brand"><img src="miboshoplogo1.png" alt="" width="135" height="96"/></a>
-			</div>
+
+		<!-- A logo to be added here -->
+			<!-- <div class="navbar-header">
+				<a href="#" class="navbar-brand"><img src="#" alt="" width="135" height="96"/></a>
+			</div> -->
 			<ul class="nav navbar-nav">
 				<li><a href="profile.php"><span class="glyphicon glyphicon-home"></span>Nyumbani</a></li>
 				<li><a href="profile.php"><span class="glyphicon glyphicon-tags"></span>Vifaa</a></li>
