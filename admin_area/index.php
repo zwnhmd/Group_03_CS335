@@ -72,20 +72,14 @@ if(!$_GET["tn"])
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <!-- end of menu tab -->
     <!-- end of left content -->
-    
+    <a href="..\index.php" style ="float: center;font-size: 20px">Logout</a>
     <form action="" method="POST" enctype="multipart/form-data">
     <div class="style1">
       <div class="style2">PAKIA VIFAA HAPA</div>
       <div class="prod_box_big">
         <div class="center_prod_box_big">
-        
-        
-        
-          <div class="style3">
-           
-            
-      
-             <div class="form_row">
+        <div class="style3">
+           <div class="form_row">
               <label class="contact"><strong>Jina:</strong></label>
               <input type="text" class="contact_input" name="product_title" required />
             </div>
