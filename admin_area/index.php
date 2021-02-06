@@ -18,16 +18,17 @@ if(!$_GET["tn"])
 <title>VifaaVyaShughuli</title>
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
 <link rel="stylesheet" type="text/css" href="style.css" />
-<!--[if IE 6]>
-<link rel="stylesheet" type="text/css" href="iecss.css" />
-<![endif]-->
-<script type="text/javascript" src="js/boxOver.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<script src="js/jquery2.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="main.js"></script>
+
 
 
 <style type="text/css">
     
     body { 
-    background: #dfdfdf;
+    background: #ffffff;
     padding-top: 14px;
  
     }
@@ -66,147 +67,121 @@ if(!$_GET["tn"])
 <div id="main_container">
   <!--<div id="header">
     <div id="logo"> <a href="#"><img src="images/logo.png" alt="" border="0" width="237" height="140" /></a> </div>
-    <!-- end of oferte_content-->
+     end of oferte_content-->
   </div>
   <div id="main_content">
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <!-- end of menu tab -->
     <!-- end of left content -->
     <a href="..\index.php" style ="float: center;font-size: 20px">Logout</a>
-    <form action="" method="POST" enctype="multipart/form-data">
-    <div class="style1">
-      <div class="style2">PAKIA VIFAA HAPA</div>
-      <div class="prod_box_big">
-        <div class="center_prod_box_big">
-        <div class="style3">
-           <div class="form_row">
-              <label class="contact"><strong>Jina:</strong></label>
-              <input type="text" class="contact_input" name="product_title" required />
-            </div>
-            
-            
-            <div class="form_row">
-              <label class="contact"><strong>Kundi:</strong></label>
-              
-           <select name="product_cat" required>
-           
-           <option></option>
-           
-           
-           <?php
-           
-          
+   
+<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<div class="panel panel-primary">
+					<div class="panel-heading"><strong>PAKIA VIFAA HAPA</strong></div>
+					<div class="panel-body">
+					
+		<form method="POST" enctype="multipart/form-data">
 
+          <p><br/></p>
+						<div class="row">
+							<div class="col-md-4">
+								<label for="product_title">Jina la Kifaa:</label>
+								<input type="text" id="product_title" name="product_title" class="form-control" required >
+							</div>
+
+							<div class="col-md-4">
+								<label for="product_category">Kundi la Kifaa:</label>
+								<select type="text" name="product_cat" id="product_cat" class="form-control" required >
+
+                <option></option>
+           
+  <?php
 	$get_cats = "select * from categories";
 	$run_cats = mysqli_query($con,$get_cats);
-
-	while($row_cats=mysqli_fetch_array($run_cats)){
-
+	while($row_cats=mysqli_fetch_array($run_cats)) {
 	$cat_tit = $row_cats['cat_title'];
     $cat_id = $row_cats['cat_id'];
-    
-
-     echo "<option value=$cat_id>$cat_tit</option>";    
-    
-
-
-     }    
-           ?>
+     echo "<option value=$cat_id>$cat_tit</option>"; }    
+  ?>
            
            </select>
-           
-            </div>
-            
-            
-            
-            <div class="form_row">
-              <label class="contact"><strong>Mzalishaji:</strong></label>
-              <select name="product_brand" required>
-              
+							</div>
+
+              <div class="col-md-4">
+								<label for="product_brand">Mzalishaji wa Kifaa:</label>
+								<select type="text" id="product_brand" name="product_brand" class="form-control" required >
+
               <option></option>
-             <?php
-                          
-                          
-               $get_brands = "select * from brands";
+
+             <?php            
+             $get_brands = "select * from brands";
 	           $run_brands = mysqli_query($con,$get_brands);
-
 	           while($row_brands=mysqli_fetch_array($run_brands)){
-
-	
                $brand_tit = $row_brands['brand_title'];
                $brand_id = $row_brands['brand_id'];
-    
-
-               echo "<option value = $brand_id > $brand_tit </option>";    
-    
-
-
-    
-	           }
-
-
+               echo "<option value = $brand_id > $brand_tit </option>";}
             ?>
             
             </select>
+							</div>
+						</div>
 
+            <p><br/></p>
+            <div class="row">
+							<div class="col-md-4">
+								<label for="product_price">Bei ya Kifaa:</label>&nbsp;
+								<input type="text" id="product_price" name="product_price"class="form-control" required >
+							</div>
 
-            </div>
-            <div class="form_row">
-              <label class="contact"><strong>Picha:</strong></label>
-              <input type="file" class="contact_input" name="product_image" required />
-            </div>
-            <div class="form_row">
-              <label class="contact"><strong>Bei:</strong></label>&nbsp;
-              <input type="text" class="contact_input" name="product_price" required /></div>
-            <div class="form_row"> 
-            <div class="form_row">
-              <label class="contact"><strong>Maelezo:</strong></label>
-             <textarea name="product_desc" class="contact_input" cols="33" rows="7" required></textarea>
-            </div>
-            <div class="form_row">
-              <label class="contact"><strong>Sachi kwa:</strong></label>
-              <input type="text" class="contact_input" name="product_keywords" required/>
-              
-            
-            </div>
-				
+							<div class="col-md-4">
+								<label for="product_price">Maneno ya Kutafuta Kifaa:</label>&nbsp;
+								<input type="text" id="product_keywords" name="product_keywords"class="form-control" required >
+							</div>
 
-			 <div class="form_row">
-                            &nbsp;<input type="submit" class="contact_input" name="index" value="PAKIA" style="width: 410px"/>&nbsp;<br />
-            </div>
-        </div>
-				
-				
-          </div>
-        </div>
-        
-        <div class="bottom_prod_box_big"></div>
-      </div>
-    &nbsp;<br>
-    </div>
-    
-</form>    
-    <!-- end of center content -->
-    <!-- end of right content -->
-  </div>
-  <!-- end of main content -->
-  <div class="footer">
+							<div class="col-md-4">
+								<label for="product_image">Picha ya Kifaa:</label>
+								<input type="file" id="product_image" name="product_image" class="form-control" required >
+							</div>
+						</div>
 
-  <!-- A logo to be added here -->
-    <!-- <div class="left_footer"> <img src="#" alt="" width="150" height="85"/> </div> -->
-    
-      	<br />
-      <img src="images/payment.gif" alt="" /> </div>
-  </div>
-<!-- end of main_container -->
+            <p><br/></p>
+            <div class="row">
+							<div class="col-md-12">
+								<label for="product_desc">Maelezo kuhusu Kifaa:</label>
+								<textarea id="product_desc" name="product_desc" class="form-control" required ></textarea>
+							</div>
+						</div>
+
+						<p><br/></p>
+						<div class="row">
+							<div class="col-md-8">
+								<input style="float:right;" value="PAKIA" type="submit" id="upload_button" name="upload_button"class="btn btn-success btn-md">
+							</div>
+
+							<div class="col-md-4">
+								<input style="float:right;" value="ONDOKA" type="submit" id="logout_button" name="upload_button"class="btn btn-danger btn-md">
+							</div>
+
+						</div>
+						
+           </form>
+				</div>
+					
+					<div class="panel-footer">VifaaVyaShughuli, &copy;2021</div>
+				</div>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+
 </body>
 </html>
 
 
 <?php
 
-
-if(isset($_POST['index'])){
+if(isset($_POST['upload_button'])){
 
     //getting text data
    $product_title = $_POST['product_title'];
@@ -228,12 +203,10 @@ if(isset($_POST['index'])){
    
    if($run_product){
    
-   echo"<script>alert('Product has been inserted successfully!')</script>";
+   echo"<script>alert('Bidhaa imepakiwa kikamilifu!')</script>";
    echo"<script>window.open('index.php?tn=$r','_self')</script>";
    }
 
-
 }
-
 
 ?>
