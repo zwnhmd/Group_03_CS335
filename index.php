@@ -105,7 +105,7 @@ if(isset($_SESSION["uid"])){
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>Ingia</a>
 					<ul class="dropdown-menu">
-				<!-- Login pannel to be addd by simtovu -->
+				<!-- Login pannel to be addded -->
 	
 						<div style="width:300px;">
 							<div class="panel panel-primary">
