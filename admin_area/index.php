@@ -73,7 +73,6 @@ if(!$_GET["tn"])
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <!-- end of menu tab -->
     <!-- end of left content -->
-    <a href="..\index.php" style ="float: center;font-size: 20px">Logout</a>
    
 <div class="row">
 			<div class="col-md-2"></div>
@@ -161,7 +160,7 @@ if(!$_GET["tn"])
 							</div>
 
 							<div class="col-md-4">
-								<input style="float:right;" value="ONDOKA" type="submit" id="logout_button" name="upload_button"class="btn btn-danger btn-md">
+								<a href="logout.php" > <input style="float:right;" value="ONDOKA" type="button" id="logout_button" name="logout_button"class="btn btn-danger btn-md"></a>
 							</div>
 
 						</div>
