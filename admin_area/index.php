@@ -155,12 +155,12 @@ if(!$_GET["tn"])
 
 						<p><br/></p>
 						<div class="row">
-							<div class="col-md-8">
+							<div class="col-md-6">
 								<input style="float:right;" value="PAKIA" type="submit" id="upload_button" name="upload_button"class="btn btn-success btn-md">
 							</div>
 
-							<div class="col-md-4">
-								<a href="logout.php" > <input style="float:right;" value="ONDOKA" type="button" id="logout_button" name="logout_button"class="btn btn-danger btn-md"></a>
+							<div class="col-md-6">
+								<a href="../index.php" > <input style="float:left;" value="ONDOKA" type="button" id="logout_button" name="logout_button"class="btn btn-danger btn-md"></a>
 							</div>
 
 						</div>
