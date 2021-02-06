@@ -163,7 +163,7 @@ if(!isset($_SESSION["uid"])){
 							<!--Here we get product jquery Ajax Request-->
 						</div>
 					</div>
-					<div class="panel-footer">VifaaVyaShughuli, &copy;2021</div>
+					<div class="panel-footer">VifaaVyaShughuli, &copy;<?php echo date("Y");?></div>
 				</div>
 		  </div>
             <div class="col-md-12"></div>

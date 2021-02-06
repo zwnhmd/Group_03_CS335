@@ -60,7 +60,7 @@ if(!isset($_SESSION["uid"])){
 							</div>
 						</div>
 					</div>
-					<div class="panel-footer">VifaaVyaShughuli, &copy;2021</div>
+					<div class="panel-footer">VifaaVyaShughuli, &copy;<?php echo date("Y");?></div>
 				</div>
 			</div>
 			<div class="col-md-2"></div>
