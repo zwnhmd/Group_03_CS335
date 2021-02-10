@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Feb 06, 2021 at 02:06 PM
+-- Generation Time: Feb 10, 2021 at 02:12 AM
 -- Server version: 10.4.17-MariaDB
--- PHP Version: 8.0.1
+-- PHP Version: 7.2.34
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -108,6 +108,19 @@ INSERT INTO `categories` (`cat_id`, `cat_title`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `images`
+--
+
+CREATE TABLE `images` (
+  `id` int(11) NOT NULL,
+  `file_name` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `uploaded_on` datetime NOT NULL,
+  `status` enum('1','0') CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT '1'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `products`
 --
 
@@ -154,15 +167,20 @@ CREATE TABLE `user_info` (
   `password` varchar(300) NOT NULL,
   `mobile` varchar(10) NOT NULL,
   `address1` varchar(300) NOT NULL,
-  `address2` varchar(11) NOT NULL
+  `profile_pic` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `user_info`
 --
 
-INSERT INTO `user_info` (`user_id`, `first_name`, `last_name`, `email`, `password`, `mobile`, `address1`, `address2`) VALUES
-(3, 'Zuwena', 'Hamoud', 'zuwena@gmail.com', '98fde98d7a4936a5cffe1e72514ebade', '0772769499', 'Makumbusho', 'Mwenge');
+INSERT INTO `user_info` (`user_id`, `first_name`, `last_name`, `email`, `password`, `mobile`, `address1`, `profile_pic`) VALUES
+(26, 'Aron', 'Rwehumbiza', 'mtabuzioscar547@gmail.com', '593c9b4a9390551d53e5cacf28ebd638', '0767838755', '-', 'profile09346941.png'),
+(27, 'Aron', 'Rwehumbiza', 'kitokololoaron1@gmail.com', 'e78582c7fa761cb9358009503f2810a9', '0767838755', '-', 'profile01810702.png'),
+(28, 'Aron', 'Rwehumbiza', 'lwe@gmail.com', 'e78582c7fa761cb9358009503f2810a9', '0767838755', '-', 'profile05462309.png'),
+(29, 'Aron', 'ikhn', 'aadd@a.c', '9dcbf642c78137f656ba7c24381ac25b', '0767838755', '-', ''),
+(31, 'xfghjhk', 'jjjj', 'emanuelmatinya977@gmail.com', '25f9e794323b453885f5181f1b624d0b', '0767838755', '-', 'profile06084614.png'),
+(32, 'xfghjhk', 'jjjj', 'emanuelmatinya@gmail.com', '25f9e794323b453885f5181f1b624d0b', '0767838755', '-', 'profile02588548.png');
 
 --
 -- Indexes for dumped tables
@@ -192,6 +210,12 @@ ALTER TABLE `cart`
 --
 ALTER TABLE `categories`
   ADD PRIMARY KEY (`cat_id`);
+
+--
+-- Indexes for table `images`
+--
+ALTER TABLE `images`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `products`
@@ -225,13 +249,19 @@ ALTER TABLE `brands`
 -- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
   MODIFY `cat_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+--
+-- AUTO_INCREMENT for table `images`
+--
+ALTER TABLE `images`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `products`
@@ -243,7 +273,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `user_info`
 --
 ALTER TABLE `user_info`
-  MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
