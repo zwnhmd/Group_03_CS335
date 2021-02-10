@@ -196,7 +196,7 @@ if (isset($_POST['signup_button'])) {
                 <b>Hongera, umefanikiwa kujisajili kikamilifu!</b>
                 </div>
             ";
-            header('location: login.html');
+            header('location: customer_registration.php');
         }
     }
 }else {
