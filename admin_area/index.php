@@ -205,7 +205,6 @@ if(isset($_POST['upload_button'])){
    echo"<script>alert('Bidhaa imepakiwa kikamilifu!')</script>";
    echo"<script>window.open('index.php?tn=$r','_self')</script>";
    }
-
 }
 
 ?>
