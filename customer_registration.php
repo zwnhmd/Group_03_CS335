@@ -34,7 +34,7 @@
 			</div>
 			<div class="col-md-2"></div>
 		</div>
-		
+
 		<div class="row">
 			<div class="col-md-2"></div>
 			<div class="col-md-8">
@@ -99,14 +99,17 @@
 						<div class="row">
 						<div class="col-md-12">
 								<label for="product_image">Picha yako:</label>
-								<input type="file" id="customer_image" name="customer_image" class="form-control" required >
+								<input type="file" id="customer_image" name="customer_image" class="form-control"      >
 							</div>
 						</div>
 
 						<p><br/></p>
 						<div class="row">
-							<div class="col-md-12">
-								<input style="float:right;" value="Jisajili" type="button" id="signup_button" name="signup_button"class="btn btn-success btn-md">
+							<div class="col-md-6">
+								<input style="float:right;" value="JISAJILI" type="button" id="signup_button" name="signup_button"class="btn btn-success btn-md">
+							</div>
+							<div class="col-md-6">
+								<a href="index.php" > <input style="float:right;" value="RUDI" type="button" id="reg_back_button" name="reg_back_button"class="btn btn-danger btn-md"></a>
 							</div>
 						</div>
 
