@@ -29,7 +29,7 @@ if(!$_GET["tn"])
     
     body { 
     background: #ffffff;
-    padding-top: 14px;
+    padding-top: 50px;
  
     }
     
@@ -155,12 +155,28 @@ if(!$_GET["tn"])
 
 						<p><br/></p>
 						<div class="row">
-							<div class="col-md-6">
-								<input style="float:right;" value="PAKIA" type="submit" id="upload_button" name="upload_button"class="btn btn-success btn-md">
+							<div class="col-md-2">
+								<input style="float:right;" value="PAKIA" type="submit" id="upload_button" name="upload_button"class="btn btn-primary btn-md">
 							</div>
 
-							<div class="col-md-6">
-								<a href="../index.php" > <input style="float:left;" value="ONDOKA" type="button" id="logout_button" name="logout_button"class="btn btn-danger btn-md"></a>
+							<div class="col-md-2">
+								<a href="#" > <input style="float:right;" value="VIFAA" type="button" id="products_button" name="products_button"class="btn btn-success btn-md"></a>
+							</div>
+
+							<div class="col-md-2">
+								<a href="#" > <input style="float:right;" value="WATEJA" type="button" id="customers_button" name="customers_button"class="btn btn-success btn-md"></a>
+							</div>
+
+							<div class="col-md-2">
+								<a href="#" > <input style="float:right;" value="ORDER" type="button" id="orders_button" name="orders_button"class="btn btn-warning btn-md"></a>
+							</div>
+
+							<div class="col-md-2">
+								<a href="#" > <input style="float:right;" value="MAPATO" type="button" id="revenues_button" name="revenues_button"class="btn btn-success btn-md"></a>
+							</div>
+
+							<div class="col-md-2">
+								<a href="../index.php" > <input style="float:right;" value="ONDOKA" type="button" id="logout_button" name="logout_button"class="btn btn-danger btn-md"></a>
 							</div>
 
 						</div>
