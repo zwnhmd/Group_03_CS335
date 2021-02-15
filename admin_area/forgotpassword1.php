@@ -1,7 +1,5 @@
 <?php
 
-
-
 if(!isset($_POST["answer"]))
 {
 	header("location:login.html");
@@ -10,11 +8,11 @@ if(!isset($_POST["answer"]))
 else
 {
 
- $con = mysqli_connect("localhost","root","","mibonyezo_shopping");
+ $con = mysqli_connect("localhost","root","","vifaa_vya_shughuli");
 
  if(mysqli_connect_errno()){
   
-  echo"Failed to connect : " . mysqli_connect_error(); 
+  echo"Imeshindikana kuunganishwa kwenye kanzidata: " . mysqli_connect_error(); 
   
 }
 
@@ -34,7 +32,7 @@ if($answ==$ans)
 
 else 
 {
-	echo"<script>alert('Invalid Answer.Please Try Again')</script>";
+	echo"<script>alert('Jibu siyo sahihi, tafadhali jaribu tena!')</script>";
 	echo"<script>window.open('forgotpassword.php','_self')</script>";
 }
 

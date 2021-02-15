@@ -317,7 +317,7 @@ padding:5px 0 0 60px;
 				<input type="text" placeholder="Jibu swali ili kupata neno-siri..." required="" id="password" name="answer" />
 			</div>
 			<div>
-				<input type="submit" value="Submit" />
+				<input type="submit" value="Wasilisha" />
 				<a href="login.html">Nimelikumbuka neno-siri langu!</a>	
 			</div>
 		</form><!-- form -->

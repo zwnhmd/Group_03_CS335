@@ -319,7 +319,7 @@ padding:5px 0 0 60px;
 			</div>
 			<div>
 				<input type="submit" value="Sahihisha" />
-				<a href="login.html">Login</a>	
+				<a href="login.html">Ingia</a>	
 			</div>
 		</form><!-- form -->
 		<!-- button -->

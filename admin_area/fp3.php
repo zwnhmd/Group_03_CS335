@@ -11,11 +11,11 @@ else{
 
 
 
- $con = mysqli_connect("localhost","root","","mibonyezo_shopping");
+ $con = mysqli_connect("localhost","root","","vifaa_vya_shughuli");
 
  if(mysqli_connect_errno()){
   
-  echo"Failed to connect : " . mysqli_connect_error(); 
+  echo"Imeshindikana kuunganishwa kwenye kanzidata: " . mysqli_connect_error(); 
   
 }
 
@@ -30,14 +30,14 @@ else{
     	$query = "update ad_log set apwd ='$newpass'";
     	$run = mysqli_query($con,$query);
 
-    	echo"<script>alert('Password Changed.Please Login..')</script>";
+    	echo"<script>alert('Nen0-siri limebadilika, tafadhali ingia tena!')</script>";
     	echo"<script>window.open('login.html','_self')</script>";
 
     }
 
     else{
 
-    	echo"<script>alert('Password not match.please Re-enter')</script>";
+    	echo"<script>alert('Maneno-siri hayafanani, tafadhali jaribu tena!')</script>";
     	echo"<script>window.open('fp2.php',_self)</script>";
     }
 

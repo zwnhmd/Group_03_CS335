@@ -5,7 +5,7 @@
 <!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>VifaaVyaShuguli Change Password</title>
+<title>VifaaVyaShuguli Badili Neno-siri</title>
 <style>
 /* Reset CSS */
 html, body, div, span, applet, object, iframe,
@@ -273,15 +273,15 @@ form:after {
 <div class="container">
 	<section id="content">
 		<form action="fp3.php" method="POST" >
-			<h1>Change Your Password</h1>
+			<h1>Badili Neno-siri</h1>
 			<div>
-				<input type="password" placeholder="Enter new password" required="" id="password" name="tex" />
+				<input type="password" placeholder="Ingiza neno-siri jipya" required="" id="password" name="tex" />
 			</div>
 			<div>
-				<input type="password" placeholder="Re-enter password" required="" id="password" name="pass" />
+				<input type="password" placeholder="Rudia neno-siri" required="" id="password" name="pass" />
 			</div>
 			<div>
-				<input type="submit" value="Done!!!" />
+				<input type="submit" value="Wasilisha" />
 				
 				
 			</div>

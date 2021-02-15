@@ -10,8 +10,7 @@ $con = mysqli_connect($servername, $username, $password,$db);
 
 // Check connection
 if (!$con) {
-    die("Could not connect to the database: " . mysqli_connect_error());
+    die("Imeshindikana kuunganishwa kwenye kanzidata: " . mysqli_connect_error());
 }
-
 
 ?>

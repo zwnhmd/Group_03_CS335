@@ -5,22 +5,15 @@ if(!isset($_POST["password1"]))
 	header("location:login.html");
 }
 
-
 else{
 
-
-
-
-
- $con = mysqli_connect("localhost","root","","electronix");
+ $con = mysqli_connect("localhost","root","","vifaa_vya_shughuli");
 
  if(mysqli_connect_errno()){
   
-  echo"Imeshindikana kuunganishwa: " . mysqli_connect_error(); 
+  echo"Imeshindikana kuunganishwa kwenye kanzidata: " . mysqli_connect_error(); 
   
 }
-
-
 
 $psec = $_POST["password1"];
 $nsec = $_POST["password2"];
@@ -36,7 +29,7 @@ if($psec==$answer)
 	$qry = "update ad_log set secques = '$nsec'";
 	$result = mysqli_query($con,$qry);
 
-	echo "<script>alert('Jibu limesahihishwa!!!')</script>";
+	echo "<script>alert('Jibu limesahihishwa!')</script>";
 
 	echo "<script>window.open('login.html','_self')</script>";
 
