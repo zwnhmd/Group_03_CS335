@@ -34,14 +34,16 @@
 			</div>
 			<div class="col-md-2"></div>
 		</div>
+		
 		<div class="row">
 			<div class="col-md-2"></div>
 			<div class="col-md-8">
 				<div class="panel panel-primary">
-					<div class="panel-heading">Fomu ya Mteja Kujisajili</div>
+					<div class="panel-heading"><strong>FOMU YA MTEJA KUJISAJILI</strong></div>
 					<div class="panel-body">
 					
 					<form method="post">
+					<p><br/></p>
 						<div class="row">
 							<div class="col-md-6">
 								<label for="f_name">Jina la Kwanza:</label>
@@ -52,49 +54,62 @@
 								<input type="text" id="l_name" name="l_name"class="form-control">
 							</div>
 						</div>
+
+						<p><br/></p>
 						<div class="row">
 							<div class="col-md-12">
 								<label for="email">Barua-pepe:</label>
 								<input type="text" id="email" name="email"class="form-control">
 							</div>
 						</div>
+
+						<p><br/></p>
 						<div class="row">
-							<div class="col-md-12">
+							<div class="col-md-6">
 								<label for="password">Neno-siri:</label>
 								<input type="password" id="password" name="password"class="form-control">
 							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
+							<div class="col-md-6">
 								<label for="repassword">Rudia Neno-siri:</label>
 								<input type="password" id="repassword" name="repassword"class="form-control">
 							</div>
 						</div>
+
+						<p><br/></p>
 						<div class="row">
 							<div class="col-md-12">
 								<label for="mobile">Namba ya Simu:</label>
 								<input type="text" id="mobile" name="mobile"class="form-control">
 							</div>
 						</div>
+
+						<p><br/></p>
 						<div class="row">
-							<div class="col-md-12">
+							<div class="col-md-6">
 								<label for="address1">Anwani 1:</label>
 								<input type="text" id="address1" name="address1"class="form-control">
 							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
+							<div class="col-md-6">
 								<label for="address2">Anwani 2:</label>
 								<input type="text" id="address2" name="address2"class="form-control">
 							</div>
 						</div>
+
+						<p><br/></p>
+						<div class="row">
+						<div class="col-md-12">
+								<label for="product_image">Picha yako:</label>
+								<input type="file" id="customer_image" name="customer_image" class="form-control" required >
+							</div>
+						</div>
+
 						<p><br/></p>
 						<div class="row">
 							<div class="col-md-12">
 								<input style="float:right;" value="Jisajili" type="button" id="signup_button" name="signup_button"class="btn btn-success btn-md">
 							</div>
 						</div>
-						
+
                         </form>
 					</div>
 					
