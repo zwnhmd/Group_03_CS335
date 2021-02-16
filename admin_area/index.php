@@ -129,9 +129,14 @@ if(!$_GET["tn"])
 
             <p><br/></p>
             <div class="row">
-							<div class="col-md-4">
+							<div class="col-md-3">
 								<label for="product_price">Bei ya Kifaa:</label>&nbsp;
 								<input type="text" id="product_price" name="product_price"class="form-control" required >
+							</div>
+
+							<div class="col-md-1">
+								<label for="product_price">Idadi:</label>&nbsp;
+								<input type="number" id="product_quantity" name="product_quantity"class="form-control" required >
 							</div>
 
 							<div class="col-md-4">
