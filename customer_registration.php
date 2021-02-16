@@ -85,14 +85,14 @@
 
 						<p><br/></p>
 						<div class="row">
-							<div class="col-md-6">
+							<div class="col-md-12">
 								<label for="address1">Anwani 1:</label>
 								<input type="text" id="address1" name="address1"class="form-control">
 							</div>
-							<div class="col-md-6">
+							<!-- <div class="col-md-6">
 								<label for="address2">Anwani 2:</label>
 								<input type="text" id="address2" name="address2"class="form-control">
-							</div>
+							</div> -->
 						</div>
 
 						<p><br/></p>
