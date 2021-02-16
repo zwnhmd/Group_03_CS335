@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Feb 06, 2021 at 02:06 PM
+-- Generation Time: Feb 16, 2021 at 11:06 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.1
 
@@ -83,6 +83,13 @@ CREATE TABLE `cart` (
   `total_amt` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `cart`
+--
+
+INSERT INTO `cart` (`id`, `p_id`, `ip_add`, `user_id`, `product_title`, `product_image`, `qty`, `price`, `total_amt`) VALUES
+(12, 162, '0', 4, 'Kiti VIP', 'pari-500x500.png', 5, 4000, 20000);
+
 -- --------------------------------------------------------
 
 --
@@ -117,6 +124,7 @@ CREATE TABLE `products` (
   `product_brand` int(100) NOT NULL,
   `product_title` varchar(255) NOT NULL,
   `product_price` int(100) NOT NULL,
+  `product_quantity` int(255) NOT NULL,
   `product_desc` text NOT NULL,
   `product_image` text NOT NULL,
   `product_keywords` text NOT NULL
@@ -126,19 +134,19 @@ CREATE TABLE `products` (
 -- Dumping data for table `products`
 --
 
-INSERT INTO `products` (`product_id`, `product_cat`, `product_brand`, `product_title`, `product_price`, `product_desc`, `product_image`, `product_keywords`) VALUES
-(152, 5, 7, 'Turubai Nyumba', 5000, 'Rangi nyeupe\r\nNafasi kubwa ya mpaka watu watano\r\nMwanga wa kutosha', '3m-lightweight-canvas-bell-tent-sandstone-p1423-10164_image.jpg', 'turubai nyumba camp picnic likizo'),
-(153, 5, 3, 'Turubai Wazi', 4000, 'Rangi ya kijani\r\nnafasi kubwa mpaka watu ishirini', 'shade-01.jpg', 'turubai nyumba camp picnic likizo'),
-(154, 1, 1, 'Senator Meza', 1500, 'Imara', 'cello senator table.png', 'meza cello nyekundu'),
-(155, 2, 2, 'Kiti Imara', 1200, 'Miguu ya chuma', 'Xylo-600x650.jpg', 'cello plastiki kijani'),
-(156, 2, 1, 'KIti Fahari', 1500, 'Kina mto', 'cushioned-fix-type-chair-500x500.png', 'kiti cello fahari'),
-(157, 5, 6, 'Turubai Simple', 5000, 'Rangi ya blue\r\nImara ', '61knKOx6y9L._AC_SX466_.jpg', 'turubai nyumba camp picnic likizo'),
-(158, 1, 1, 'Meza Ndefu', 4500, 'Nyekundu\r\nNdefu', 'cello-eden-dining-table-500x500.png', 'meza cello nyekundu'),
-(159, 3, 4, 'Chombo Mtori', 4000, 'Imara\r\nHaipati kutu', 'equipment-chafing-dish-rectangle-roll-top-stainless-steel.jpg', 'Chafing dish vyombo chombo sufuria'),
-(160, 4, 7, 'Mapambo', 20000, 'Rangi ya dhahabu', 'mapambo2.JPG', 'maua mapambo sherehe ukumbi'),
-(161, 3, 1, 'Chombo Supu', 4500, 'Hakipati kutu\r\nChakula cha moto', 'PU2638FS008FRO_260326_2018-05-25_12-25-03.jpeg', 'vyombo sahani sufuria'),
-(162, 2, 7, 'Kiti VIP', 4000, 'Kiti simple', 'pari-500x500.png', 'Kiti nyekundu mto vip sherehe'),
-(163, 1, 4, 'Senator Meza', 1500, 'Imara sana', 'wynell-plastic-dining-table.jpg', 'meza cello kijani');
+INSERT INTO `products` (`product_id`, `product_cat`, `product_brand`, `product_title`, `product_price`, `product_quantity`, `product_desc`, `product_image`, `product_keywords`) VALUES
+(152, 5, 7, 'Turubai Nyumba', 5000, 0, 'Rangi nyeupe\r\nNafasi kubwa ya mpaka watu watano\r\nMwanga wa kutosha', '3m-lightweight-canvas-bell-tent-sandstone-p1423-10164_image.jpg', 'turubai nyumba camp picnic likizo'),
+(153, 5, 3, 'Turubai Wazi', 4000, 0, 'Rangi ya kijani\r\nnafasi kubwa mpaka watu ishirini', 'shade-01.jpg', 'turubai nyumba camp picnic likizo'),
+(154, 1, 1, 'Senator Meza', 1500, 0, 'Imara', 'cello senator table.png', 'meza cello nyekundu'),
+(155, 2, 2, 'Kiti Imara', 1200, 0, 'Miguu ya chuma', 'Xylo-600x650.jpg', 'cello plastiki kijani'),
+(156, 2, 1, 'KIti Fahari', 1500, 0, 'Kina mto', 'cushioned-fix-type-chair-500x500.png', 'kiti cello fahari'),
+(157, 5, 6, 'Turubai Simple', 5000, 0, 'Rangi ya blue\r\nImara ', '61knKOx6y9L._AC_SX466_.jpg', 'turubai nyumba camp picnic likizo'),
+(158, 1, 1, 'Meza Ndefu', 4500, 0, 'Nyekundu\r\nNdefu', 'cello-eden-dining-table-500x500.png', 'meza cello nyekundu'),
+(159, 3, 4, 'Chombo Mtori', 4000, 0, 'Imara\r\nHaipati kutu', 'equipment-chafing-dish-rectangle-roll-top-stainless-steel.jpg', 'Chafing dish vyombo chombo sufuria'),
+(160, 4, 7, 'Mapambo', 20000, 0, 'Rangi ya dhahabu', 'mapambo2.JPG', 'maua mapambo sherehe ukumbi'),
+(161, 3, 1, 'Chombo Supu', 4500, 0, 'Hakipati kutu\r\nChakula cha moto', 'PU2638FS008FRO_260326_2018-05-25_12-25-03.jpeg', 'vyombo sahani sufuria'),
+(162, 2, 7, 'Kiti VIP', 4000, 0, 'Kiti simple', 'pari-500x500.png', 'Kiti nyekundu mto vip sherehe'),
+(163, 1, 4, 'Senator Meza', 1500, 0, 'Imara sana', 'wynell-plastic-dining-table.jpg', 'meza cello kijani');
 
 -- --------------------------------------------------------
 
@@ -162,7 +170,8 @@ CREATE TABLE `user_info` (
 --
 
 INSERT INTO `user_info` (`user_id`, `first_name`, `last_name`, `email`, `password`, `mobile`, `address1`, `address2`) VALUES
-(3, 'Zuwena', 'Hamoud', 'zuwena@gmail.com', '98fde98d7a4936a5cffe1e72514ebade', '0772769499', 'Makumbusho', 'Mwenge');
+(3, 'Zuwena', 'Hamoud', 'zuwena@gmail.com', '98fde98d7a4936a5cffe1e72514ebade', '0772769499', 'Makumbusho', 'Mwenge'),
+(4, 'Abdallah', 'Chupaza', 'mibonyezo@gmail.com', '75851dc9e45d736163729ee57d930d22', '0712171799', 'Chamazi', 'Mbagala');
 
 --
 -- Indexes for dumped tables
@@ -225,7 +234,7 @@ ALTER TABLE `brands`
 -- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `categories`
@@ -243,7 +252,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `user_info`
 --
 ALTER TABLE `user_info`
-  MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
