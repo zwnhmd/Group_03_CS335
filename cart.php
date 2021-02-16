@@ -20,10 +20,10 @@ if(!isset($_SESSION["uid"])){
 		<div class="container-fluid">	
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse" aria-expanded="false">
-					<span class="sr-only">navigation toggle</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
+					<span class="sr-only">navigation toggle</span> 
+					<span class="icon-bar"></span> 
+					<span class="icon-bar"></span> 
+					<span class="icon-bar"></span> 
 				</button>
 
 				<!-- A logo is to be added here
@@ -32,8 +32,8 @@ if(!isset($_SESSION["uid"])){
 			</div>
 		<div class="collapse navbar-collapse" id="collapse">
 			<ul class="nav navbar-nav">
-				<li><a href="index.php"><span class="glyphicon glyphicon-home"></span>Nyumbani</a></li>
-				<li><a href="index.php"><span class="glyphicon glyphicon-tags"></span>Vifaa</a></li>
+				<li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Nyumbani</a></li>
+				<li><a href="index.php"><span class="glyphicon glyphicon-tags"></span> Vifaa</a></li>
 			</ul>
 		</div>
 	</div>

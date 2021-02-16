@@ -37,8 +37,8 @@ $c_amt = $_COOKIE["ta"];
 
 			</div>
 			<ul class="nav navbar-nav">
-				<li><a href="#"><span class="glyphicon glyphicon-home"></span>Nyumbani</a></li>
-				<li><a href="#"><span class="glyphicon glyphicon-tags"></span>Vifaa</a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-home"></span> Nyumbani</a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-tags"></span> Vifaa</a></li>
 			</ul>
 		</div>
 	</div>

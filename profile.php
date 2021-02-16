@@ -71,15 +71,15 @@ if(!isset($_SESSION["uid"])){
 
 	<span class="open-slide">
 	<!--The open-slider <a></a> used to be in here-->
-    </span>
+    </span> 
         
 		<div class="container-fluid">	
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse" aria-expanded="false">
-					<span class="sr-only"> navigation toggle</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
+					<span class="sr-only"> navigation toggle</span> 
+					<span class="icon-bar"></span> 
+					<span class="icon-bar"></span> 
+					<span class="icon-bar"></span> 
 				</button>
 
 				<!-- A logo is to be added here
@@ -97,12 +97,20 @@ if(!isset($_SESSION["uid"])){
         </svg></a></li>
 
 				<li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Nyumbani</a></li>
+ index-page
+				<li><a href="profile.php"><span class="glyphicon glyphicon-tags"></span> Vifaa</a></li>
+
 				<li><a href="profile.php"><span class="glyphicon glyphicon-tags"></span>Vifaa</a></li>
+ master
 				<li style="width:180px;left:25px;top:10px;"><input type="text" class="form-control" id="search"></li>
 				<li style="top:10px;left:30px;"><button class="btn btn-primary" id="search_btn"> Tafuta</button></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
+ index-page
+				<li><a href="#" id="cart_container" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span> Kikapu<span class="badge">0</span> </a>
+
 				<li><a href="#" id="cart_container" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span>  Kikapu <span class="badge">0</span></a>
+ master
 					<div class="dropdown-menu" style="width:500px;">
 						<div class="panel panel-success">
 							<div class="panel-heading">
@@ -123,13 +131,13 @@ if(!isset($_SESSION["uid"])){
 				</li>
 				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <?php echo "Mambo, ".$_SESSION["name"]; ?></a>
 					<ul class="dropdown-menu">
-                        <li><a href="cart.php" style="text-decoration:none; color:red;"><span class="glyphicon glyphicon-shopping-cart"></span>Kikapu</a></li>
+                        <li><a href="cart.php" style="text-decoration:none; color:red;"><span class="glyphicon glyphicon-shopping-cart"></span> Kikapu</a></li>
 						<li class="divider"></li>
-						<li><a href="customer_order.php" style="text-decoration:none; color:red;"><span class="glyphicon glyphicon-tag"></span>Maagizo</a></li>
+						<li><a href="customer_order.php" style="text-decoration:none; color:red;"><span class="glyphicon glyphicon-tag"></span> Maagizo</a></li>
 						<li class="divider"></li>
-                        <li><a href="payment_success.php" style="text-decoration:none; color:red;"><span class=" glyphicon glyphicon-bell"></span>Taarifa</a></li>
+                        <li><a href="payment_success.php" style="text-decoration:none; color:red;"><span class=" glyphicon glyphicon-bell"></span> Taarifa</a></li>
                         <li class="divider"></li>
-						<li><a href="logout.php" style="text-decoration:none; color:red;"><span class=" glyphicon glyphicon-remove"></span>Ondoka</a></li>
+						<li><a href="logout.php" style="text-decoration:none; color:red;"><span class=" glyphicon glyphicon-remove"></span> Ondoka</a></li>
 					</ul>
 				</li>
 				

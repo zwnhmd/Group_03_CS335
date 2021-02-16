@@ -203,8 +203,8 @@ if(isset($_POST["get_cart_product"]) || isset($_POST["cart_checkout"])){
 					<div class='row'>
 							<div class='col-md-2 col-sm-2'>
 								<div class='btn-group'>
-									<a href='#' remove_id='$pro_id' class='btn btn-danger btn-xs remove'><span class='glyphicon glyphicon-trash'></span></a>
-									<a href='' update_id='$pro_id' class='btn btn-primary btn-xs update'><span class='glyphicon glyphicon-ok-sign'></span></a>
+									<a href='#' remove_id='$pro_id' class='btn btn-danger btn-xs remove'><span class='glyphicon glyphicon-trash'></span> </a>
+									<a href='' update_id='$pro_id' class='btn btn-primary btn-xs update'><span class='glyphicon glyphicon-ok-sign'></span> </a>
 								</div>
 							</div>
 							<div class='col-md-2 col-sm-2'><img src='product_images/$pro_image' width='70px' height='55'></div>
