@@ -116,7 +116,8 @@ if(isset($_SESSION["uid"])){
 									<label for="email">Neno-siri</label>
 									<input type="password" class="form-control" id="password" required/>
 									<p><br/></p>
-									<a href="#" style="color:white; list-style:none;">Nimesahau Neno-siri langu!</a><input type="submit" class="btn btn-success" style="float:right;" id="login" value="Ingia">
+									<!-- added link to reset password  -->
+									<a href="password_resets/reset.php" style="color:white; list-style:none;">Nimesahau Neno-siri langu!</a><input type="submit" class="btn btn-success" style="float:right;" id="login" value="Ingia">
 								</div>
 								<div class="panel-footer" id="e_msg"></div>
 							</div>
