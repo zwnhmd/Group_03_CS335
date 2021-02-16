@@ -97,12 +97,20 @@ if(!isset($_SESSION["uid"])){
         </svg></a></li>
 
 				<li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Nyumbani</a></li>
+ index-page
 				<li><a href="profile.php"><span class="glyphicon glyphicon-tags"></span> Vifaa</a></li>
+
+				<li><a href="profile.php"><span class="glyphicon glyphicon-tags"></span>Vifaa</a></li>
+ master
 				<li style="width:180px;left:25px;top:10px;"><input type="text" class="form-control" id="search"></li>
-				<li style="top:10px;left:30px;"><button class="btn btn-primary" id="search_btn">Tafuta</button></li>
+				<li style="top:10px;left:30px;"><button class="btn btn-primary" id="search_btn"> Tafuta</button></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
+ index-page
 				<li><a href="#" id="cart_container" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span> Kikapu<span class="badge">0</span> </a>
+
+				<li><a href="#" id="cart_container" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span>  Kikapu <span class="badge">0</span></a>
+ master
 					<div class="dropdown-menu" style="width:500px;">
 						<div class="panel panel-success">
 							<div class="panel-heading">

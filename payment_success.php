@@ -18,7 +18,7 @@ $c_amt = $_COOKIE["ta"];
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>VifaaVyaShughuli payment</title>
+		<title>VifaaVyaShughuli Payment</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css"/>
 		<script src="js/jquery2.js"></script>
 		<script src="js/bootstrap.min.js"></script>
@@ -53,11 +53,11 @@ $c_amt = $_COOKIE["ta"];
 				<div class="panel panel-default">
 					<div class="panel-heading"></div>
 					<div class="panel-body">
-						<h1>Thank you </h1>
+						<h1>Asante! </h1>
 						<hr/>
-						<p>Habari, <?php echo $_SESSION["name"]; ?>,Malipo yako yamekamilika, namba ya muamala huu ni <b></b><br/>
-						you can now continue<br/></p>
-						<a href="index.php" class="btn btn-success btn-lg">Endelea kuongeza mahitaji yako ya kukodi!</a>
+						<p>Habari, <?php echo $_SESSION["name"]; ?>, malipo yako yamekamilika,  namba ya muamala huu ni VTH5415SHSH87D25S<b></b><br/>
+						Kwa sasa unaweza kuendelea na mahitaji mengine.<br/></p>
+						<a href="index.php" class="btn btn-success btn-lg"> Endelea na mahitaji</a>
 					</div>
 					<div class="panel-footer"></div>
 				</div>
