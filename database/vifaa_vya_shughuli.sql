@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Feb 16, 2021 at 11:06 AM
+-- Generation Time: Feb 16, 2021 at 11:38 AM
 -- Server version: 10.4.17-MariaDB
--- PHP Version: 8.0.1
+-- PHP Version: 7.2.34
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -83,13 +83,6 @@ CREATE TABLE `cart` (
   `total_amt` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `cart`
---
-
-INSERT INTO `cart` (`id`, `p_id`, `ip_add`, `user_id`, `product_title`, `product_image`, `qty`, `price`, `total_amt`) VALUES
-(12, 162, '0', 4, 'Kiti VIP', 'pari-500x500.png', 5, 4000, 20000);
-
 -- --------------------------------------------------------
 
 --
@@ -111,6 +104,18 @@ INSERT INTO `categories` (`cat_id`, `cat_title`) VALUES
 (3, 'Vyombo'),
 (4, 'Mapambo'),
 (5, 'Turubai');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `password_resets`
+--
+
+CREATE TABLE `password_resets` (
+  `id` int(11) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `token` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -161,17 +166,16 @@ CREATE TABLE `user_info` (
   `email` varchar(300) NOT NULL,
   `password` varchar(300) NOT NULL,
   `mobile` varchar(10) NOT NULL,
-  `address1` varchar(300) NOT NULL,
-  `address2` varchar(11) NOT NULL
+  `address1` varchar(300) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `user_info`
 --
 
-INSERT INTO `user_info` (`user_id`, `first_name`, `last_name`, `email`, `password`, `mobile`, `address1`, `address2`) VALUES
-(3, 'Zuwena', 'Hamoud', 'zuwena@gmail.com', '98fde98d7a4936a5cffe1e72514ebade', '0772769499', 'Makumbusho', 'Mwenge'),
-(4, 'Abdallah', 'Chupaza', 'mibonyezo@gmail.com', '75851dc9e45d736163729ee57d930d22', '0712171799', 'Chamazi', 'Mbagala');
+INSERT INTO `user_info` (`user_id`, `first_name`, `last_name`, `email`, `password`, `mobile`, `address1`) VALUES
+(3, 'Zuwena', 'Hamoud', 'zuwena@gmail.com', '98fde98d7a4936a5cffe1e72514ebade', '0772769499', 'Makumbusho'),
+(4, 'Aron', 'Rwehumbiza', 'kitokololoaron@gmail.com', '04756df9bb2a558fcedc61b4eabce321', '0767736947', 'ki');
 
 --
 -- Indexes for dumped tables
@@ -201,6 +205,13 @@ ALTER TABLE `cart`
 --
 ALTER TABLE `categories`
   ADD PRIMARY KEY (`cat_id`);
+
+--
+-- Indexes for table `password_resets`
+--
+ALTER TABLE `password_resets`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `token` (`token`);
 
 --
 -- Indexes for table `products`
@@ -234,13 +245,19 @@ ALTER TABLE `brands`
 -- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
   MODIFY `cat_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+--
+-- AUTO_INCREMENT for table `password_resets`
+--
+ALTER TABLE `password_resets`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `products`
