@@ -55,7 +55,7 @@ if(!isset($_SESSION["uid"])){
 									<tr><td>Bei ya Kukodi Kifaa</td><td><b>Ths. 1,000/-</b></td></tr>
 									<tr><td>Idadi</td><td><b>3</b></td></tr>
 									<tr><td>Malipo</td><td><b>Yamekamilika</b></td></tr>
-									<tr><td>Namba ya Muamala</td><td><b>RTSH5415SHSHYD87D25S</b></td></tr>
+									<tr><td>Namba ya Muamala</td><td><b>VTH5415SHSH87D25S</b></td></tr>
 								</table>
 							</div>
 						</div>

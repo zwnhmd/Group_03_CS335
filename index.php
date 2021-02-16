@@ -98,12 +98,12 @@ if(isset($_SESSION["uid"])){
         </svg></a></li>
 
 				<li><a href="index.php"><span class="glyphicon glyphicon-home"></span>Nyumbani</a></li>
-				<li><a href="profile.php"><span class="glyphicon glyphicon-tags"></span>Vifaa</a></li>
+				<li><a href="profile.php"><span class="glyphicon glyphicon-tags"></span> Vifaa</a></li>
 				<li style="width:180px;left:25px;top:10px;"><input type="text" class="form-control" id="search"></li>
 				<li style="top:10px;left:30px;"><button class="btn btn-primary" id="search_btn">Tafuta</button></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>Ingia</a>
+				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>  Ingia</a>
 					<ul class="dropdown-menu">
 				<!-- Login pannel to be addded -->
 	
@@ -129,8 +129,8 @@ if(isset($_SESSION["uid"])){
 
 				<!-- Create a customer registration file -->
 
-				<li><a href="customer_registration.php"><span class="glyphicon glyphicon-user"></span>Jisajili</a></li>
-                <li><a href="admin_area/login.html"><span class="glyphicon glyphicon-sunglasses"></span>Msimamizi</a></li>
+				<li><a href="customer_registration.php"><span class="glyphicon glyphicon-user"></span>  Jisajili</a></li>
+                <li><a href="admin_area/login.html"><span class="glyphicon glyphicon-sunglasses"></span>  Msimamizi</a></li>
 			</ul>
 		</div>
 	</div>

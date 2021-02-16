@@ -96,13 +96,13 @@ if(!isset($_SESSION["uid"])){
             <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
         </svg></a></li>
 
-				<li><a href="index.php"><span class="glyphicon glyphicon-home"></span>Nyumbani</a></li>
+				<li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Nyumbani</a></li>
 				<li><a href="profile.php"><span class="glyphicon glyphicon-tags"></span>Vifaa</a></li>
 				<li style="width:180px;left:25px;top:10px;"><input type="text" class="form-control" id="search"></li>
-				<li style="top:10px;left:30px;"><button class="btn btn-primary" id="search_btn">Tafuta</button></li>
+				<li style="top:10px;left:30px;"><button class="btn btn-primary" id="search_btn"> Tafuta</button></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#" id="cart_container" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span>Kikapu<span class="badge">0</span></a>
+				<li><a href="#" id="cart_container" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span>  Kikapu <span class="badge">0</span></a>
 					<div class="dropdown-menu" style="width:500px;">
 						<div class="panel panel-success">
 							<div class="panel-heading">
@@ -121,7 +121,7 @@ if(!isset($_SESSION["uid"])){
 						</div>
 					</div>
 				</li>
-				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span><?php echo "Mambo, ".$_SESSION["name"]; ?></a>
+				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <?php echo "Mambo, ".$_SESSION["name"]; ?></a>
 					<ul class="dropdown-menu">
                         <li><a href="cart.php" style="text-decoration:none; color:red;"><span class="glyphicon glyphicon-shopping-cart"></span>Kikapu</a></li>
 						<li class="divider"></li>
