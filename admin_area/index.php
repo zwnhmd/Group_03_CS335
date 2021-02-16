@@ -208,6 +208,7 @@ if(isset($_POST['upload_button'])){
    $product_cat = $_POST['product_cat'];
    $product_brand = $_POST['product_brand'];
    $product_price = $_POST['product_price'];
+   $product_quantity = $_POST['product_quantity'];
    $product_desc = $_POST['product_desc'];
    $product_keywords = $_POST['product_keywords'];
    
@@ -217,7 +218,7 @@ if(isset($_POST['upload_button'])){
    
    move_uploaded_file($product_image_tmp,"product_images/$product_image");
    
-   $insert_product = "insert into products (product_cat,product_brand,product_title,product_price,product_desc,product_image,product_keywords) values ('$product_cat','$product_brand','$product_title','$product_price','$product_desc','$product_image','$product_keywords')";
+   $insert_product = "insert into products (product_cat,product_brand,product_title,product_price,product_quantity,product_desc,product_image,product_keywords) values ('$product_cat','$product_brand','$product_title','$product_price','$product_desc','$product_image','$product_keywords')";
    
    $run_product = mysqli_query($con,$insert_product);
    
