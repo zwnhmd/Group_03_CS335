@@ -253,18 +253,7 @@ if(isset($_POST["get_cart_product"]) || isset($_POST["cart_checkout"])){
 				<input type="hidden" name="cancel_return" value="http://www.sysc.esy.es/shoppingCart/cancel.php"/>
 				<input type="hidden" name="currency_code" value="USD"/>
 				<input type="hidden" name="custom" value="'.$uid.'"/>
-                
-                
-                <div class="row" style="float:right;margin-left:60px;margin-right:60px">
-                <div class="col-md-3 col-sm-3"><a href="https://www.tigo.co.tz/my-account/?manual_login=1"><img src="tigopesa.png" alt="" width="130" height="50"/></a></div>
-                
-            <div class="col-md-3 col-sm-3"><a href="https://vodacom.co.tz/en/customer/account/login/"><img src="mpesa.png" alt="" width="130" height="50"/></a></div>
             
-                    <div class="col-md-3 col-sm-3"><a href="halotel.co.tz/en/service/halopesa/halopesa"><img src="halopesa.png" alt="" width="130" height="50"/></a></div>
-                    
-            <div class="col-md-3 col-sm-3"><a href="http://www.livepesa.co.tz/"><img src="airtelmoney.jpg" alt="" width="130" height="50"/></a></div>
-
-                </div>
                 
 				</form>';
 		
