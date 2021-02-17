@@ -102,7 +102,9 @@ if(isset($_SESSION["uid"])){
 				<li style="top:10px;left:30px;"><button class="btn btn-primary" id="search_btn">Tafuta</button></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Ingia</a>
+
+				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>  Ingia</a>
+ 
 					<ul class="dropdown-menu">
 				<!-- Login pannel to be addded -->
 	
@@ -126,10 +128,10 @@ if(isset($_SESSION["uid"])){
 					</ul>
 				</li>
 
-				<!-- Create a customer registration file -->
+				
+				<li><a href="customer_registration.php"><span class="glyphicon glyphicon-user"></span>  Jisajili</a></li>
+                <li><a href="admin_area/login.html"><span class="glyphicon glyphicon-sunglasses"></span>  Msimamizi</a></li>
 
-				<li><a href="customer_registration.php"><span class="glyphicon glyphicon-user"></span> Jisajili</a></li>
-                <li><a href="admin_area/login.html"><span class="glyphicon glyphicon-sunglasses"></span> Msimamizi</a></li>
 			</ul>
 		</div>
 	</div>

@@ -49,7 +49,7 @@ if(isset($_POST["page"])){
 	}
 }
 if(isset($_POST["getProduct"])){
-	$limit = 12;
+	$limit = 24;
 	if(isset($_POST["setPage"])){
 		$pageno = $_POST["pageNumber"];
 		$start = ($pageno * $limit) - $limit;
@@ -225,7 +225,7 @@ if(isset($_POST["get_cart_product"]) || isset($_POST["cart_checkout"])){
 			echo "<div class='row'>
 				<div class='col-md-8'></div>
 				<div class='col-md-4'>
-					<h2>Total:  Tsh. $total_amt/=</h2><h4>Lipa kwenye: 0712 171799 VifaaVyaShughuli</h4>
+					<h2>Jumla:  Tsh. $total_amt/=</h2><h4>Lipa kwenye: 0712 171799 VifaaVyaShughuli</h4>
 				</div>";
 		}
 		echo '
