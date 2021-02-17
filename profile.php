@@ -101,11 +101,9 @@ if(!isset($_SESSION["uid"])){
 				<li style="top:10px;left:30px;"><button class="btn btn-primary" id="search_btn"> Tafuta</button></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
- index-page
+			
 				<li><a href="#" id="cart_container" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span> Kikapu<span class="badge">0</span> </a>
 
-				<li><a href="#" id="cart_container" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span>  Kikapu <span class="badge">0</span></a>
- master
 					<div class="dropdown-menu" style="width:500px;">
 						<div class="panel panel-success">
 							<div class="panel-heading">
