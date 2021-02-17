@@ -2,20 +2,20 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Password Reset </title>
+	<title>Badili Neno-siri </title>
 	<link rel="stylesheet" href="main.css">
 </head>
 <body>
 	<form class="login-form" action="reset.php" method="post">
-		<h2 class="form-title">Reset password</h2>
+		<h2 class="form-title">Badili Neno-siri</h2>
 		<!-- form validation messages -->
 		<?php include('messages.php'); ?>
 		<div class="form-group">
-			<label>Your email address</label>
+			<label>Jaza anwani yako ya barua pepe:</label>
 			<input type="email" name="email">
 		</div>
 		<div class="form-group">
-			<button type="submit" name="reset-password" class="login-btn">Submit</button>
+			<button type="submit" name="reset-password" class="login-btn">Wasilisha</button>
 		</div>
 	</form>
 </body>
