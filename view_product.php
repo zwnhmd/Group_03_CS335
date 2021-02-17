@@ -84,7 +84,7 @@
     margin: 10px !important;
 }
 </style>
-    <title>Document</title>
+    <title>VifaaVyaShughuli product details</title>
 </head>
 <body>
 <div class="row">
@@ -93,7 +93,7 @@
         <div class=''>
         <div class='panel panel-info'>
             <div class='panel-heading'>
-                <button class="btn btn-primary btn-sm" onclick="window.history.back()"> Back</button>
+                <button class="btn btn-primary btn-sm" onclick="window.history.back()"> Rudi</button>
             <b><?= $prod['product_title']?></b></div>
             <div class='panel-body'>
                 <p class="text-center">
