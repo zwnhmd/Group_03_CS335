@@ -10,9 +10,9 @@
 
 	<form class="login-form" action="login.php" method="post" style="text-align: center;">
 		<p>
-			Tumetuma barua pepe kwenye anwani  <b><?php echo $_GET['email'] ?></b>. Barua pepe hiyo itakusaidia kurudisha akaunti yako! 
+			Tumetuma barua pepe kwenye anwani  <b><?php echo $_GET['email'] ?></b>, barua pepe hiyo itakusaidia kurudisha akaunti yako! 
 		</p>
-	    <p>Tafadhali ingia kwenye anwani yako ya barua pepe na ubonyeze kwenye link ili ubadili neno-siri lako.</p>
+	    <p>Tafadhali ingia kwenye anwani yako ya barua pepe na ubonyeze link ili ubadili neno-siri lako.</p>
 	</form>
 		
 </body>
