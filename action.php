@@ -69,9 +69,11 @@ if(isset($_POST["getProduct"])){
 			echo "
 				<div class='col-md-4'>
 							<div class='panel panel-info'>
-								<div class='panel-heading'><b>$pro_title</b></div>
+								<div class='panel-heading'><b>$pro_title </b></div>
 								<div class='panel-body'>
-									<img src='product_images/$pro_image' style='float:right; width:230px; height:210px;'/>
+									<a href='view_product.php?prod_id=" . $pro_id . "'>
+										<img src='product_images/$pro_image' style='float:right; width:230px; height:210px;'/>
+									</a>
 								</div>
 								<div class='panel-heading'><b>Tsh. $pro_price/=</b>
 									<button pid='$pro_id' style='float:right;' id='product' class='btn btn-danger btn-xs'>Nahitaji</button>
@@ -107,7 +109,9 @@ if(isset($_POST["get_seleted_Category"]) || isset($_POST["selectBrand"]) || isse
 							<div class='panel panel-info'>
 								<div class='panel-heading'><b>$pro_title</b></div>
 								<div class='panel-body'>
-									<img src='product_images/$pro_image' style='float:right; width:230px; height:210px;'/>
+								<a href='view_product.php?prod_id=" . $pro_id . "'>
+								<img src='product_images/$pro_image' style='float:right; width:230px; height:210px;'/>
+							</a>
 								</div>
 								<div class='panel-heading'><b>Tsh. $pro_price/=</b>
 									<button pid='$pro_id' style='float:right;' id='product' class='btn btn-danger btn-xs'>Nahitaji</button>
@@ -159,7 +163,7 @@ if(isset($_POST["get_seleted_Category"]) || isset($_POST["selectBrand"]) || isse
 			echo "
 					<div class='alert alert-danger'>
 						<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-						<b>Samahani! Tafadhali hakikisha umejisajili kabla ya kukusanya mahitaji yako!</b>
+						<b>Samahani! Tafadhali hakikisha umejisajili au umeingia kabla ya kukusanya mahitaji yako!</b>
 					</div>
 				";
 		}

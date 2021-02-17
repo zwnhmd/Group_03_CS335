@@ -19,19 +19,19 @@ if(isset($_SESSION["uid"])){
 				#search_btn{width:30%;float:right;margin-top:-32px;margin-right:60px;}
 			}
             
-            .side-nav{
-  height:100%;
-  width:250px;
-  position:fixed;
-  z-index:1;
-  top:1;
-  left:1;
-  background-color:#000;
-  opacity: 0.8;
-  padding-top:35px;
-  line-height: 5px;
-     overflow-x:hidden;
-  transition:0.5s;
+			.side-nav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 92px;
+    margin-top: -6px;
+    background-color: #000;
+    opacity: 0.8;
+    padding-top: 35px;
+    line-height: 2px;
+    overflow-x: hidden;
+    transition: 0.5s;
 }
             
 .side-nav a{
@@ -90,15 +90,14 @@ if(isset($_SESSION["uid"])){
 		<div class="collapse navbar-collapse" id="collapse">
 			<ul class="nav navbar-nav">
 
-			    <li><a href="#" onclick="openSlideMenu()">
+			<li><a href="#" onclick="openSlideMenu()">
         <svg width="30" height="30">
             <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
             <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
             <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
         </svg></a></li>
 
-			<li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Nyumbani</a></li> 
-				<li><a href="profile.php"><span class="glyphicon glyphicon-tags"></span> Vifaa</a></li>
+				<li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Nyumbani</a></li>
 				<li style="width:180px;left:25px;top:10px;"><input type="text" class="form-control" id="search"></li>
 				<li style="top:10px;left:30px;"><button class="btn btn-primary" id="search_btn">Tafuta</button></li>
 			</ul>
@@ -170,15 +169,13 @@ if(isset($_SESSION["uid"])){
 	</div>
           </div>
     
-      <script>
+		  <script>
     function openSlideMenu(){
-      document.getElementById('side-menu').style.width = '250px';
-      document.getElementById('main').style.marginLeft = '250px';
+      document.getElementById('side-menu').style.marginLeft = '0';
     }
 
     function closeSlideMenu(){
-      document.getElementById('side-menu').style.width = '0';
-      document.getElementById('main').style.marginLeft = '0';
+      document.getElementById('side-menu').style.marginLeft = '-250px';
     }
   </script>
     
