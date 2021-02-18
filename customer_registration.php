@@ -19,7 +19,6 @@
 
 			<ul class="nav navbar-nav">
 				<li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Nyumbani</a></li>
-				<li><a href="index.php"><span class="glyphicon glyphicon-tags"></span> Vifaa</a></li>
 			</ul>
 		</div>
 	</div>
@@ -86,18 +85,6 @@
 								<input type="text" id="address1" name="address1"class="form-control">
 							</div>
 						</div>
-
-					<!--<p><br/></p>
-						<div class="row">
-						<div class="col-md-12">
-								<label for="address1">Anwani 1:</label>
-								<input type="text" id="address1" name="address1"class="form-control">
-							</div>
-						    <div class="col-md-6">
-								<label for="address2">Anwani 2:</label>
-								<input type="text" id="address2" name="address2"class="form-control">
-							</div> 
-						</div>-->
 
 						<p><br/></p>
 						<div class="row">
