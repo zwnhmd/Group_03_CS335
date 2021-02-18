@@ -49,7 +49,7 @@ if(isset($_POST["page"])){
 	}
 }
 if(isset($_POST["getProduct"])){
-	$limit = 12;
+	$limit = 24;
 	if(isset($_POST["setPage"])){
 		$pageno = $_POST["pageNumber"];
 		$start = ($pageno * $limit) - $limit;
@@ -69,9 +69,11 @@ if(isset($_POST["getProduct"])){
 			echo "
 				<div class='col-md-4'>
 							<div class='panel panel-info'>
-								<div class='panel-heading'><b>$pro_title</b></div>
+								<div class='panel-heading'><b>$pro_title </b></div>
 								<div class='panel-body'>
-									<img src='product_images/$pro_image' style='float:right; width:230px; height:210px;'/>
+									<a href='view_product.php?prod_id=" . $pro_id . "'>
+										<img src='product_images/$pro_image' style='float:right; width:230px; height:210px;'/>
+									</a>
 								</div>
 								<div class='panel-heading'><b>Tsh. $pro_price/=</b>
 									<button pid='$pro_id' style='float:right;' id='product' class='btn btn-danger btn-xs'>Nahitaji</button>
@@ -107,7 +109,9 @@ if(isset($_POST["get_seleted_Category"]) || isset($_POST["selectBrand"]) || isse
 							<div class='panel panel-info'>
 								<div class='panel-heading'><b>$pro_title</b></div>
 								<div class='panel-body'>
-									<img src='product_images/$pro_image' style='float:right; width:230px; height:210px;'/>
+								<a href='view_product.php?prod_id=" . $pro_id . "'>
+								<img src='product_images/$pro_image' style='float:right; width:230px; height:210px;'/>
+							</a>
 								</div>
 								<div class='panel-heading'><b>Tsh. $pro_price/=</b>
 									<button pid='$pro_id' style='float:right;' id='product' class='btn btn-danger btn-xs'>Nahitaji</button>
@@ -159,7 +163,7 @@ if(isset($_POST["get_seleted_Category"]) || isset($_POST["selectBrand"]) || isse
 			echo "
 					<div class='alert alert-danger'>
 						<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-						<b>Samahani! Tafadhali hakikisha umejisajili kabla ya kukusanya mahitaji yako!</b>
+						<b>Samahani! Tafadhali hakikisha umejisajili au umeingia kabla ya kukusanya mahitaji yako!</b>
 					</div>
 				";
 		}
@@ -203,8 +207,8 @@ if(isset($_POST["get_cart_product"]) || isset($_POST["cart_checkout"])){
 					<div class='row'>
 							<div class='col-md-2 col-sm-2'>
 								<div class='btn-group'>
-									<a href='#' remove_id='$pro_id' class='btn btn-danger btn-xs remove'><span class='glyphicon glyphicon-trash'></span></a>
-									<a href='' update_id='$pro_id' class='btn btn-primary btn-xs update'><span class='glyphicon glyphicon-ok-sign'></span></a>
+									<a href='#' remove_id='$pro_id' class='btn btn-danger btn-xs remove'><span class='glyphicon glyphicon-trash'></span> </a>
+									<a href='' update_id='$pro_id' class='btn btn-primary btn-xs update'><span class='glyphicon glyphicon-ok-sign'></span> </a>
 								</div>
 							</div>
 							<div class='col-md-2 col-sm-2'><img src='product_images/$pro_image' width='70px' height='55'></div>
@@ -221,7 +225,7 @@ if(isset($_POST["get_cart_product"]) || isset($_POST["cart_checkout"])){
 			echo "<div class='row'>
 				<div class='col-md-8'></div>
 				<div class='col-md-4'>
-					<h2>Total:  Tsh. $total_amt/=</h2><h4>Lipa kwenye: 0712 171799 VifaaVyaShughuli</h4>
+					<h2>Jumla:  Tsh. $total_amt/=</h2><h4>Lipa kwenye: 0712 171799 VifaaVyaShughuli</h4>
 				</div>";
 		}
 		echo '
@@ -249,18 +253,7 @@ if(isset($_POST["get_cart_product"]) || isset($_POST["cart_checkout"])){
 				<input type="hidden" name="cancel_return" value="http://www.sysc.esy.es/shoppingCart/cancel.php"/>
 				<input type="hidden" name="currency_code" value="USD"/>
 				<input type="hidden" name="custom" value="'.$uid.'"/>
-                
-                
-                <div class="row" style="float:right;margin-left:60px;margin-right:60px">
-                <div class="col-md-3 col-sm-3"><a href="https://www.tigo.co.tz/my-account/?manual_login=1"><img src="tigopesa.png" alt="" width="130" height="50"/></a></div>
-                
-            <div class="col-md-3 col-sm-3"><a href="https://vodacom.co.tz/en/customer/account/login/"><img src="mpesa.png" alt="" width="130" height="50"/></a></div>
             
-                    <div class="col-md-3 col-sm-3"><a href="halotel.co.tz/en/service/halopesa/halopesa"><img src="halopesa.png" alt="" width="130" height="50"/></a></div>
-                    
-            <div class="col-md-3 col-sm-3"><a href="http://www.livepesa.co.tz/"><img src="airtelmoney.jpg" alt="" width="130" height="50"/></a></div>
-
-                </div>
                 
 				</form>';
 		

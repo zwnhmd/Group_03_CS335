@@ -27,8 +27,8 @@ if(!isset($_SESSION["uid"])){
 				<a href="#" class="navbar-brand"><img src="#" alt="" width="135" height="96"/></a>
 			</div> -->
 			<ul class="nav navbar-nav">
-				<li><a href="profile.php"><span class="glyphicon glyphicon-home"></span>Nyumbani</a></li>
-				<li><a href="profile.php"><span class="glyphicon glyphicon-tags"></span>Vifaa</a></li>
+				<li><a href="profile.php"><span class="glyphicon glyphicon-home"></span> Nyumbani</a></li>
+				<li><a href="profile.php"><span class="glyphicon glyphicon-tags"></span> Vifaa</a></li>
 			</ul>
 		</div>
 	</div>
@@ -55,7 +55,7 @@ if(!isset($_SESSION["uid"])){
 									<tr><td>Bei ya Kukodi Kifaa</td><td><b>Ths. 1,000/-</b></td></tr>
 									<tr><td>Idadi</td><td><b>3</b></td></tr>
 									<tr><td>Malipo</td><td><b>Yamekamilika</b></td></tr>
-									<tr><td>Namba ya Muamala</td><td><b>RTSH5415SHSHYD87D25S</b></td></tr>
+									<tr><td>Namba ya Muamala</td><td><b>VTH5415SHSH87D25S</b></td></tr>
 								</table>
 							</div>
 						</div>

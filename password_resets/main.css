@@ -1,5 +1,5 @@
 body {
-	background: #3b5998;
+	background: #ffffff;
 	font-size: 1.1em;
 	font-family: sans-serif;
 }
@@ -9,9 +9,9 @@ a {
 form {
 	width: 25%;
 	margin: 70px auto;
-	background: white;
+	background: #d9edf7;
 	padding: 10px;
-	border-radius: 3px;
+	border-radius: 5px;
 }
 h2.form-title {
 	text-align: center;
@@ -29,7 +29,7 @@ form button {
 	width: 100%;
 	border: none;
 	color: white;
-	background: #3b5998;
+	background: #5172bb;
 	padding: 15px;
 	border-radius: 5px;
 }
