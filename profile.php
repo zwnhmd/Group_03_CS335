@@ -127,7 +127,7 @@ if(!isset($_SESSION["uid"])){
 						<li class="divider"></li>
 						<li><a href="customer_order.php" style="text-decoration:none; color:red;"><span class="glyphicon glyphicon-tag"></span>Maagizo</a></li>
 						<li class="divider"></li>
-                        <li><a href="payment_success.php" style="text-decoration:none; color:red;"><span class=" glyphicon glyphicon-bell"></span>Taarifa</a></li>
+                        <li><a href="payment_success.php?amt=''&st=''&cc=''&ta=''&cm='' style="text-decoration:none; color:red;"><span class=" glyphicon glyphicon-bell"></span>Taarifa</a></li>
                         <li class="divider"></li>
 						<li><a href="logout.php" style="text-decoration:none; color:red;"><span class=" glyphicon glyphicon-remove"></span>Ondoka</a></li>
 					</ul>
@@ -163,6 +163,7 @@ if(!isset($_SESSION["uid"])){
 							<!--Here we get product jquery Ajax Request-->
 						</div>
 					</div>
+					
 					<div class="panel-footer">VifaaVyaShughuli, &copy;<?php echo date("Y");?></div>
 				</div>
 		  </div>
