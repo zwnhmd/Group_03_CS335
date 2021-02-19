@@ -87,12 +87,12 @@
 						</div>
 
 						<p><br/></p>
-						<div class="row">
+						<!-- <div class="row">
 						<div class="col-md-12">
 								<label for="product_image">Picha yako:</label>
 								<input type="file" id="customer_image" name="customer_image" class="form-control"      >
 							</div>
-						</div>
+						</div> -->
 
 						<p><br/></p>
 						<div class="row">
