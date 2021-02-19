@@ -31,7 +31,7 @@ if(!isset($_SESSION["uid"])){
 			</div>
 			<ul class="nav navbar-nav">
 				<li><a href="profile.php"><span class="glyphicon glyphicon-home"></span> Nyumbani</a></li>
-				<li><a href="profile.php"><span class="glyphicon glyphicon-tags"></span> Vifaa</a></li>
+		
 			</ul>
 		</div>
 	</div>
