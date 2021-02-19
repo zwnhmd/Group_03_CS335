@@ -4,15 +4,8 @@ session_start();
 if(!isset($_SESSION["uid"])){
 	header("location:index.php");
 }
-$trx_id = $_GET["tx"];
-$p_st = $_GET["st"];
-$amt = $_GET["amt"];
-$cc = $_GET["cc"];
-$cm = $_GET["cm"];
-$c_amt = $_COOKIE["ta"];
 
-
-?>
+?>$t
 
 <!DOCTYPE html>
 <html>
@@ -37,8 +30,8 @@ $c_amt = $_COOKIE["ta"];
 
 			</div>
 			<ul class="nav navbar-nav">
-				<li><a href="#"><span class="glyphicon glyphicon-home"></span> Nyumbani</a></li>
-				<li><a href="#"><span class="glyphicon glyphicon-tags"></span> Vifaa</a></li>
+				<li><a href="profile.php"><span class="glyphicon glyphicon-home"></span> Nyumbani</a></li>
+		
 			</ul>
 		</div>
 	</div>
